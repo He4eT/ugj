@@ -7,7 +7,8 @@ html, body {
 body {
 	background: url('../img/background.png');
   min-width: 1000px;
-  background-position: center;	
+  background-position: center;
+  font-family: 'Neucha', cursive;
 }
 
 /*common*/
