@@ -132,7 +132,26 @@ a {
 	display: inline-block;
 	width: 200px;
 	height: 200px;
-	/*margin: 0 30px;*/
+	margin: 0 40px;
+	cursor: pointer;
+}
+
+.org_logo:hover {
+  opacity: 0.7;
+  filter: alpha(Opacity=70);
+}
+
+#logo_1 {
 	background: url('../img/logo-gamejam.png') no-repeat; 
 	background-size: contain;
+}
+
+#logo_2 {
+	background: url('../img/targem.png') no-repeat; 
+	background-size: contain;
+}
+
+#logo_3 {
+	background: url('../img/dinosaur.png') no-repeat; 
+  background-size: auto 77%;
 }
