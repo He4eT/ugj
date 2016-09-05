@@ -21,6 +21,7 @@ a {
 	margin: 0 auto;
 	max-width: 960px;
 	padding-top: 50px;
+  letter-spacing: 1px;
 }
 
 /*menu*/
@@ -77,6 +78,11 @@ a {
   color: #9ccc4b;
 }
 
+.text a:hover {
+  color: #00b482;
+  text-decoration: underline;
+}
+
 .text_bottom {
   color: #00b482;
   margin-top: 50px;
@@ -87,21 +93,46 @@ a {
 .list_header {
   text-align: center;
   color: #00b482;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
 .list {
   font-size: 1.8rem;
-  width: 400px;
-  text-align: left;
-  margin: 0 auto;
+  /*width: 600px;*/
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
   list-style: none;
   margin-bottom: 30px;
+}
+
+.list li {
+	margin-bottom: 5px;
+}
+
+.list li span {
+	letter-spacing: 3px;
+  font-weight: bold;
 }
 
 .list li::before {
   content: '-';
   font-weight: bold;
+  margin-left: -30px;
   margin-right: 10px;
+}
+
+.footer {
+	margin-top: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.org_logo {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	/*margin: 0 30px;*/
+	background: url('../img/logo-gamejam.png') no-repeat; 
+	background-size: contain;
 }
