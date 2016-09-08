@@ -5,9 +5,12 @@ html, body {
 
 body {
 	background: url('../img/background.png');
+  background-attachment: fixed;
   min-width: 1000px;
-  background-position: center;
+  background-position: center 0;
   font-family: 'Neucha', cursive;
+  transition: 0s linear;
+  transition-property: background-position;
 }
 
 /*common*/
@@ -34,8 +37,8 @@ a {
 .menu .item {
 	float: left;
 	padding: 10px;
-	border: 2px solid #9ccc4b;
-	color: #9ccc4b;
+	border: 2px solid #b1fe32;
+	color: #b1fe32;
 	margin-right: 10px;
   font-size: 20px;
   text-transform: uppercase;
@@ -45,8 +48,8 @@ a {
 }
 
 .menu .item:hover {
-  color: #00b482;
-  border-color: #00b482;
+  color: #16efb2;
+  border-color: #16efb2;
 }
 
 .menu .item:last-child {
@@ -75,16 +78,16 @@ a {
 }
 
 .text a {
-  color: #9ccc4b;
+  color: #b1fe32;
 }
 
 .text a:hover {
-  color: #00b482;
+  color: #16efb2;
   text-decoration: underline;
 }
 
 .text_bottom {
-  color: #00b482;
+  color: #16efb2;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -92,7 +95,7 @@ a {
 /*list*/
 .list_header {
   text-align: center;
-  color: #00b482;
+  color: #16efb2;
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
@@ -142,16 +145,16 @@ a {
 }
 
 #logo_1 {
-	background: url('../img/logo-gamejam.png') no-repeat; 
+	background: url('../img/logo-gamejam.png') no-repeat;
 	background-size: contain;
 }
 
 #logo_2 {
-	background: url('../img/targem.png') no-repeat; 
+	background: url('../img/targem.png') no-repeat;
 	background-size: contain;
 }
 
 #logo_3 {
-	background: url('../img/dinosaur.png') no-repeat; 
+	background: url('../img/dinosaur.png') no-repeat;
   background-size: auto 77%;
 }

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
 	<link rel="icon" href="./favicon.ico?v=0" type="image/x-icon">
 	<link rel="shortcut icon" href="./favicon.ico?v=0" type="image/x-icon">
-	<title>Ural Game Jam 09.2016</title>
+	<title>Ural Game Jam 2</title>
   <link href="https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./styles/main.css" />
 	<meta name='yandex-verification' content='628805e82ed7f70a' />
@@ -32,16 +33,16 @@
     </div>
     <ul class="text list">
       <li>Узнай тему соревнования <span>31.10.2016</span></li>
-      <li>Сдай демо до <span>07.10.2016</span></li>
-      <li>Выкати релиз до <span>14.10.2016</span></li>
-      <li>Получи награду <span>21.10.2016</span></li>
+      <li>Сдай демо до <span>07.11.2016</span></li>
+      <li>Выкати релиз до <span>14.11.2016</span></li>
+      <li>Получи награду <span>21.11.2016</span></li>
     </ul>
     <div class="list_header">
       Что нужно?
     </div>
     <ul class="text list">
       <li>Команда от 1 до ∞</li>
-      <li>Зарегистрироваться на 
+      <li>Зарегистрироваться на
       	<a href="http://gamejolt.com/join" target="_blank">
       		GameJolt
     		</a>
@@ -58,12 +59,23 @@
     </div>
 
     <div class="footer">
-    	<a target="_blank" id="logo_1" class="org_logo" 
+    	<a target="_blank" id="logo_1" class="org_logo"
     		href="./archive/04_2016/"></a>
-    	<a target="_blank" id="logo_2" class="org_logo" 
+    	<a target="_blank" id="logo_2" class="org_logo"
     		href="http://targem.ru"></a>
     	<p id="logo_3" class="org_logo" title="BadBar"></p>
     </div>
 	</div>
+  <script type="text/javascript">
+    var parallax = document.body;
+
+    function scrollHandler () {
+      parallax.style.backgroundPosition = 'center ' + window.scrollY/(-2) + 'px';
+    }
+
+    window.onscroll = function(e) {
+      window.requestAnimationFrame(scrollHandler);
+    }
+  </script>
 </body>
 </html>
