@@ -12,6 +12,7 @@ body {
   font-family: 'Neucha', cursive;
   transition: 0s linear;
   transition-property: background-position;
+  padding-bottom: 150px;
 }
 
 /*common*/
@@ -127,7 +128,6 @@ a {
 }
 
 .footer {
-	margin-bottom: 150px;
 	text-align: center;
 }
 
