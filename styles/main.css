@@ -127,8 +127,7 @@ a {
 }
 
 .footer {
-	margin-top: 80px;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	text-align: center;
 }
 
@@ -148,14 +147,17 @@ a {
 #logo_1 {
 	background: url('../img/logo-gamejam.png') no-repeat;
 	background-size: contain;
+  background-position: bottom;
 }
 
 #logo_2 {
 	background: url('../img/targem.png') no-repeat;
 	background-size: contain;
+  background-position: bottom;
 }
 
 #logo_3 {
 	background: url('../img/dinosaur.png') no-repeat;
   background-size: auto 77%;
+  background-position: bottom;
 }
