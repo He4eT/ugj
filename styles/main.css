@@ -161,3 +161,25 @@ a {
   background-size: auto 77%;
   background-position: bottom;
 }
+
+/*reg*/
+.reg {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.reg_button {
+  font-family: sans-serif;
+  padding: 10px 30px;
+  border: 2px solid #b1fe32;
+  color: #b1fe32;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reg_button:hover {
+  color: #16efb2;
+  border-color: #16efb2;
+}
