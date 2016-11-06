@@ -163,6 +163,13 @@ a {
 }
 
 /*reg*/
+.form {
+  margin: 0 auto;
+  width: 68%;
+  border: 5px solid #84fe00;
+  background-color: #cde7c2;
+}
+
 .reg {
   margin-bottom: 70px;
   text-align: center;
