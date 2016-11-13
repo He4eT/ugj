@@ -191,3 +191,35 @@ a {
   color: #16efb2;
   border-color: #16efb2;
 }
+
+.theme {
+  text-align: center;
+  color: #b1fe32;
+  margin-bottom: 70px;
+}
+
+.theme:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  margin-top: 30px;
+  border-bottom: 5px solid #00efb0; 
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #00efb0;
+}
+
+.h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.achivment {
+  font-size: 3rem;
+  margin: 20px;
+}
