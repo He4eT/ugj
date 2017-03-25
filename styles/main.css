@@ -93,3 +93,17 @@ li>span {
   max-height: 80vh;
   max-width: 60vw;
 }
+
+.smallTheme {
+  color: orange;
+}
+
+.theme {
+  font-size: 3rem;
+  color: lime;
+}
+
+.achivment {
+  font-size: 2.5rem;
+  color: purple;
+}
