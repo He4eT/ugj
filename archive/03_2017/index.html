@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Ural Game Jam :3</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+	<meta name='yandex-verification' content='628805e82ed7f70a' />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+  <canvas id="rainbow"></canvas>
+  <div class="wrap" id="parallax">
+	<div class="content">
+    <div class="text_center">
+      <img class="logo" src="/img/logo.png" alt="uralgamejam3">
+    </div>
+		<div class="text text_center">
+			Всегда хотел сделать свою игру? <br>
+			Или уже сделал и хочешь ещё? <br>
+			Есть отличный повод - участвуй в <a href="http://jams.gamejolt.io/uralgamejam3" target="_blank">Ural Game Jam :3</a>
+		</div>
+    
+    <div class="text text_center">
+      <div class="smallTheme">Тема:</div>
+      <div class="theme">
+        РЕАБИЛИТАЦИЯ
+      </div>
+      <br>
+      <div class="smallTheme">Ачивки:</div>
+      <div class="achivment">
+        Бесполезный туториал
+      </div>
+      <div class="achivment">
+        Посттравматический синдром
+      </div>
+      <div class="achivment">
+        "А голову ты дома не забыл?"
+      </div>
+      <div class="achivment">
+        Табличка сарказм
+      </div>
+      <div class="achivment">
+        Британский акцент
+      </div>
+      <div class="achivment">
+        Cкелет в шкафу
+      </div>
+      <div class="achivment">
+        Шутки за 300
+      </div>
+    </div>
+
+    <ul class="text text_right list">
+      <li>Команда от 1 до ∞</li>
+      <li>Зарегистрироваться на
+        <a href="http://gamejolt.com/join" target="_blank">
+          GameJolt
+        </a>
+      </li>
+      <li>Безумные идеи</li>
+      <li>Инструменты от Basic до Unreal Engine</li>
+    </ul>
+
+    <ul class="text text_left list">
+      <li>Узнай тему соревнования <span>25 марта 2017 года</span></li>
+      <li>Сдай демо до <span>2 апреля</span></li>
+      <li>Выкати релиз до <span>9 апреля</span></li>
+      <li>Получи заслуженую награду <span>16 апреля</span></li>
+    </ul>
+
+    <div class="text text_center">
+      Подробности соревнования и советы новичкам <br>
+      читайте в <a href="https://vk.com/uralgamejam" class="item" target="_blank">
+				группе
+			</a>
+    </div>
+	</div>
+  </div>
+  <!-- rainbow -->
+  <script>
+    let a = rainbow
+    c = a.getContext("2d")
+    w = a.width = (innerWidth/30)|0
+    h = a.height = (innerHeight/30)|0
+    z = 0
+
+    res = 50
+    speed = 1
+
+    ~function L(t){
+      with(Math)
+        for(y0=h;y0--;)
+          for(x0=w;x0--;)
+            T=speed*t/1e5,
+            x=x0+cos(T)*(w/2),y=y0+sin(T)*(h/2),µ=T*10+x*y/(res*1e2),
+              c.fillStyle=`hsl(${(x+(T|0)+round(cos(µ)*sin(µ)*360))%360}, 100% , 50%)`,
+              c.fillRect(x0,y0,1,1)
+      requestAnimationFrame(L)
+    }()
+  </script>
+  <!-- parallax -->
+  <script type="text/javascript">
+    var parallax = document.getElementById('parallax');
+
+    function scrollHandler () {
+      parallax.style.backgroundPosition = 'center ' + window.scrollY/(-2) + 'px';
+    }
+
+    window.onscroll = function(e) {
+      window.requestAnimationFrame(scrollHandler);
+    }
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+  console.log("Молодец, что смотришь в консоль, да ^_^");
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter36067215 = new Ya.Metrika({
+          id:36067215,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+        });
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/36067215" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+</html>
